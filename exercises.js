@@ -13,8 +13,13 @@ Objects in Javascript can be compared to objects in real life. Objects has a col
     
     Console.log the object.
 */
-    
-  
+var books = {
+    title : 'The Obstacle is the Way',
+    author : 'Ryan Holiday',
+    category : 'Self Help',
+    pages : 200
+}  
+  console.log(books);
 /*
 2.  Declare a variable named `dog` and create the following properties (key-value pairs) to the object:
    
@@ -29,7 +34,18 @@ Objects in Javascript can be compared to objects in real life. Objects has a col
  
  "My dog `name` is `age` year old and likes to `speak` at strangers."
 */ 
+var dog = {
+    name : 'Butch',
+    age : 5, 
+    vegeterian : false, 
+    color : ['brown', 'black'],
+    speak : function(){
+        return "Bark!";
+    }
 
+}
+console.log(dog.speak());
+console.log("My dog's name is " + dog.name + " and he is " + dog.age + " years old and likes to "+ dog.speak() + "at strangers.");
 
 
 //An empty object
@@ -46,8 +62,17 @@ Objects in Javascript can be compared to objects in real life. Objects has a col
             
   Console.log the object.
 */
+var kicks = { }; 
+kicks.brand = 'converse';
+kicks.color = 'blue';
+kicks.size = 9;
+kicks.price = 60;
+kicks.buy = function(){
+    return "Now that is a cool kid!";
+}
 
-
+console.log(kicks);
+console.log(kicks.buy());
 /* 
 
 4. Declare a variable named `plainBox` and set its value to be an EMPTY object.
@@ -58,7 +83,13 @@ Objects in Javascript can be compared to objects in real life. Objects has a col
 
   console.log the object
 */
+var plainBox = { };
 
+plainBox.color = 'brown';
+plainBox.size = 14;
+plainBox.contents = []
+
+console.log(plainBox)
 
 /*
 5. Declare a variable named `stockCar` and create the following properties (key-value pairs) to the object:
@@ -70,8 +101,15 @@ Objects in Javascript can be compared to objects in real life. Objects has a col
 
     console.log the object
 */
+var stockCar = {
+    model : 'Chevorlet',
+    year : 1969,
+    automaticTransmission : false,
+    driver : null,
+    passengers : [] 
+}
 
-
+console.log(stockCar);
 /*
 
 6. Add new property inside a function
